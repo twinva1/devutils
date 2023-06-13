@@ -29,7 +29,7 @@ This [project](http://ec2-13-215-209-48.ap-southeast-1.compute.amazonaws.com/) s
 
 
 ## CI/CD
-![CI/CD image](CI:CD.png "A CI/CD image")
+![CI/CD image](CI%3ACD.png "A CI/CD image")
 
 [Jenkinsfile](Jenkinsfile)
 [docker-compose.yml]
