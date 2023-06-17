@@ -1,5 +1,5 @@
 # Project Overview:
-![project image](project.png)
+![project image](images/project.png)
 
 This [project](http://ec2-13-215-209-48.ap-southeast-1.compute.amazonaws.com/) serves as a foundation for developing commonly used and scalable products in real-world scenarios. It consists of a front-end service and three back-end services.
 
@@ -29,7 +29,7 @@ This [project](http://ec2-13-215-209-48.ap-southeast-1.compute.amazonaws.com/) s
 
 
 ## CI/CD
-![CI/CD image](CI%3ACD.png "A CI/CD image")
+![CI/CD image](images/CI_CD.png "A CI/CD image")
 
 [Jenkinsfile](Jenkinsfile)      
 [docker-compose.yml]
