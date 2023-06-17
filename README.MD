@@ -33,3 +33,17 @@ This [project](http://ec2-13-215-209-48.ap-southeast-1.compute.amazonaws.com/) s
 
 [Jenkinsfile](Jenkinsfile)      
 [docker-compose.yml]
+
+## Scripts
+```sh
+# push images to dockerhub
+./dockerhub-helper.sh -o push
+bash dockerhub-helper.sh -o push
+
+# pull images from dockerhub
+./dockerhub-helper.sh -o pull
+bash dockerhub-helper.sh -o pull
+
+# clone all repositories and build images by docker-compose
+./startup.sh
+```
