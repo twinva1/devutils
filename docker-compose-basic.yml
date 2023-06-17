@@ -1,39 +1,18 @@
 version: '3'
 services:
-  activemq:
-    image: webcenter/activemq
-    container_name: activemq
-    ports:
-      - 61616:61616
-      - 8161:8161
-    networks:
-      - training
-
   notification-service:
-    depends_on:
-      - activemq
     image: notification-service
     container_name: notification-service
     ports:
       - 5556:5556
-    environment:
-      - ACTIVEMQ_URL=tcp://activemq:61616
-      - ACTIVEMQ_USER=admin
-      - ACTIVEMQ_PASSWORD=admin
     networks:
       - training
 
   expense-service:
-    depends_on:
-      - activemq
     image: expense-service
     container_name: expense-service
     ports:
       - 5555:5555
-    environment:
-      - ACTIVEMQ_URL=tcp://activemq:61616
-      - ACTIVEMQ_USER=admin
-      - ACTIVEMQ_PASSWORD=admin
     networks:
       - training
 
